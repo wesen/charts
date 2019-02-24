@@ -81,7 +81,7 @@ alertmanager:
   ingress:
     ## If true, alertmanager Ingress will be created
     ##
-    enabled: false
+    enabled: true
 
     ## alertmanager Ingress annotations
     ##
@@ -96,7 +96,8 @@ alertmanager:
     ## alertmanager Ingress hostnames with optional path
     ## Must be provided if Ingress is enabled
     ##
-    hosts: []
+    hosts: 
+       - prometheus.schnoopies.com
     #   - alertmanager.domain.com
     #   - domain.com/alertmanager
 
